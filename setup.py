@@ -109,7 +109,7 @@ def check_previous():
         sys.exit(1)
 
 
-async = [
+_async = [
     'greenlet>=0.4.9',
     'eventlet>= 0.9.7',
     'gevent>=0.13'
@@ -253,7 +253,7 @@ def do_setup():
         extras_require={
             'all': devel_all,
             'all_dbs': all_dbs,
-            'async': async,
+            'async': _async,
             'azure': azure,
             'celery': celery,
             'cgroups': cgroups,
